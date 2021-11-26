@@ -1,0 +1,59 @@
+.bioData {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 450px;
+}
+.container {
+  text-align: center;
+}
+.avatarImg {
+  border-radius: 50%;
+}
+.name {
+  font-size: 35px;
+  font-weight: bold;
+}
+.title {
+  font-size: 19px;
+  font-weight: bold;
+  display: block;
+  margin-top: 10px;
+}
+.socialIcons {
+  margin: 0;
+  padding: 0;
+  width: auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.socialItem {
+  list-style: none;
+  margin: 3px;
+  cursor: pointer;
+  background-color: #dddddd;
+  border-radius: 2px;
+  transition: 0.5s;
+  border: 1px solid transparent;
+}
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 38px;
+  width: 38px;
+}
+.socialItem:hover {
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #dddddd;
+}
+.footer {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 14px;
+  color: gray;
+}
