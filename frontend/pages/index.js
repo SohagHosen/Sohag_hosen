@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, officiis! Doloribus odio beatae ipsa modi assumenda eius blanditiis tempora. Officia pariatur reprehenderit, ut commodi possimus quae voluptates minus porro culpa?
+        this is homeMainNLjiQ
       </main>
 
 

@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
             <Grid className={styles.profileContainer} item xs={3}>
               <Profile />
             </Grid>
-            <Grid item xs={8}>
+            <Grid item xs={8} sx={{ background: "red" }}>
               <Box className={styles.pages}>
                 {children}
               </Box>
@@ -24,8 +24,6 @@ const Layout = ({ children }) => {
           </Grid>
         </Box>
       </Box>
-
-
     </>
   )
 }
