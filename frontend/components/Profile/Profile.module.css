@@ -1,10 +1,9 @@
 .bioData {
-  margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  height: 450px;
+  height: 100%;
 }
 .container {
   text-align: center;
@@ -49,11 +48,4 @@
 .socialItem:hover {
   background-color: rgb(255, 255, 255);
   border: 1px solid #dddddd;
-}
-.footer {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  font-size: 14px;
-  color: gray;
 }

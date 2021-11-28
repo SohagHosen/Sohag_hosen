@@ -1,0 +1,19 @@
+.nav {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navItems {
+  background-color: #fff;
+  padding: 10px 0;
+  list-style: none;
+  margin: 0 20px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 50px;
+}
+.navItem {
+  height: 50px;
+  width: 50px;
+  margin: 5px;
+}
