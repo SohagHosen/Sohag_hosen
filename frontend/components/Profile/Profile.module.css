@@ -4,6 +4,7 @@
   align-items: center;
   align-content: center;
   height: 100%;
+  min-width: 300px;
 }
 .container {
   text-align: center;
@@ -33,7 +34,7 @@
   list-style: none;
   margin: 3px;
   cursor: pointer;
-  background-color: #dddddd;
+  background-color: #e8f4ff;
   border-radius: 2px;
   transition: 0.5s;
   border: 1px solid transparent;
@@ -47,5 +48,5 @@
 }
 .socialItem:hover {
   background-color: rgb(255, 255, 255);
-  border: 1px solid #dddddd;
+  border: 1px solid #e8f4ff;
 }

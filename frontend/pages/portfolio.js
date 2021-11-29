@@ -56,7 +56,7 @@ const Portfolio = () => {
         <Box>
           <Grid container spacing={{ xs: 2, md: 3 }}>
             {portfolioData?.map((data, index) => (
-              <Grid item xs={2} sm={4} md={4} key={index}>
+              <Grid item xs={12} sm={6} md={12} lg={4} key={index}>
                 <PortfolioCard
                   img={data.img}
                   name={data.name}

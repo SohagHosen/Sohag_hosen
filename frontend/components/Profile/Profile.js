@@ -29,39 +29,47 @@ const Profile = () => {
         <section>
           <ul className={styles.socialIcons}>
             <li className={styles.socialItem}>
-              <Link href="/hello" passHref>
-                <div className={styles.socialLink}>
-                  {" "}
-                  <FacebookIcon />
-                </div>
-              </Link>
+              <a
+                href="https://www.facebook.com/RangeError/"
+                target="_blank"
+                className={styles.socialLink}
+              >
+                {" "}
+                <FacebookIcon />
+              </a>
             </li>
             <li className={styles.socialItem}>
-              <Link href="/hello" passHref>
-                <div className={styles.socialLink}>
-                  <TwitterIcon />
-                </div>
-              </Link>
+              <a
+                href="https://www.linkedin.com/in/sohaghosen/"
+                target="_blank"
+                className={styles.socialLink}
+              >
+                {" "}
+                <LinkedInIcon />
+              </a>
             </li>
+
             <li className={styles.socialItem}>
-              <Link href="/hello" passHref>
-                <div className={styles.socialLink}>
-                  <LinkedInIcon />
-                </div>
-              </Link>
-            </li>
-            <li className={styles.socialItem}>
-              <Link href="/hello" passHref>
-                <div className={styles.socialLink}>
-                  <GitHubIcon />
-                </div>
-              </Link>
+              <a
+                href="https://github.com/sohaghosen"
+                target="_blank"
+                className={styles.socialLink}
+              >
+                {" "}
+                <GitHubIcon />
+              </a>
             </li>
           </ul>
         </section>
-        <Button sx={{ mt: 2 }} variant="outlined" startIcon={<DownloadIcon />}>
-          Download Resume
-        </Button>
+        <a href="https://drive.google.com/uc?export=download&id=13PYLqhhhsq6-DGhhKOLfnqIKZxpaRIaO">
+          <Button
+            sx={{ mt: 2 }}
+            variant="outlined"
+            startIcon={<DownloadIcon />}
+          >
+            Download Resume
+          </Button>
+        </a>
       </div>
     </div>
   );

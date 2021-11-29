@@ -41,16 +41,16 @@ const Contact = () => {
           Contact me
         </Typography>
         <Grid container spacing={4}>
-          <Grid item md={6}>
+          <Grid item md={6} xs={12} sm={12}>
             <ContactForm />
           </Grid>
-          <Grid item md={6}>
+          <Grid item md={6} xs={12} sm={12}>
             <Map />
           </Grid>
         </Grid>
         <Grid sx={{ mt: 2 }} container spacing={2}>
           {info?.map((inf, i) => (
-            <Grid key={i} item md={4}>
+            <Grid key={i} item md={4} xs={12} sm={6}>
               <ContactInfo icon={inf.icon} title={inf.title} />
             </Grid>
           ))}
