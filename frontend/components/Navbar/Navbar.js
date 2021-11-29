@@ -38,7 +38,7 @@ const Navbar = () => {
             </a>
           </Link>
         </li>
-        <li className={styles.navItem}>
+        {/* <li className={styles.navItem}>
           <Link href="/resume" passHref>
             <a
               style={{ color: router.pathname == "/resume" ? "#007fff" : "" }}
@@ -50,7 +50,7 @@ const Navbar = () => {
               />
             </a>
           </Link>
-        </li>
+        </li> */}
         <li className={styles.navItem}>
           <Link href="/portfolio" passHref>
             <a

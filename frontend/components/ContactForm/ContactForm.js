@@ -6,27 +6,30 @@ const ContactForm = () => {
   return (
     <Box>
       <TextField
+        sx={{ m: 1 }}
         fullWidth
         id="standard-basic"
         label="Full Name"
         variant="standard"
       />
       <TextField
+        sx={{ m: 1 }}
         fullWidth
         id="standard-basic"
         label="Email"
         variant="standard"
       />
       <TextField
+        sx={{ m: 1 }}
         fullWidth
         id="standard-multiline-static"
-        label="Your Massage"
+        label="How Can I Help You?"
         multiline
         rows={2}
         variant="standard"
       />
-      <Button fullWidth variant="contained">
-        Contained
+      <Button sx={{ m: 1 }} fullWidth variant="contained">
+        Submit
       </Button>
     </Box>
   );
