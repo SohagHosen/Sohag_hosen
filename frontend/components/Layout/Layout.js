@@ -2,7 +2,7 @@ import { Grid } from "@mui/material";
 import { Box } from "@mui/system";
 import Navbar from "../Navbar/Navbar";
 import Profile from "../Profile/Profile";
-import styles from "../../styles/Layout.module.css";
+import styles from "./Layout.module.css";
 import Footer from "../Footer/Footer";
 const Layout = ({ children }) => {
   return (

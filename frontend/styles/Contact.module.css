@@ -1,0 +1,23 @@
+.contact {
+  padding: 20px;
+  height: 80vh;
+  overflow-y: hidden;
+  border-right: 10px solid transparent;
+}
+.contact:hover {
+  border-right: 0px solid transparent;
+  overflow-y: scroll;
+}
+.contact::-webkit-scrollbar {
+  width: 10px;
+}
+
+.contact::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.contact::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  border-radius: 20px;
+  border: 3px solid #f1f1f1;
+}

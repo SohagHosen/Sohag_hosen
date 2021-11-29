@@ -1,7 +1,7 @@
 import { Box } from "@mui/system";
 import { Button, Typography } from "@mui/material";
 import React from "react";
-import styles from "./Portfolio.module.css";
+import styles from "./PortfolioCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
 const PortfolioCard = ({ img, name, previewLink }) => {
