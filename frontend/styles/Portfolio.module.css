@@ -1,0 +1,23 @@
+.portfolio {
+  padding: 20px;
+  height: 80vh;
+  overflow-y: hidden;
+  border-right: 10px solid transparent;
+}
+.portfolio:hover {
+  border-right: 0px solid transparent;
+  overflow-y: scroll;
+}
+.portfolio::-webkit-scrollbar {
+  width: 10px;
+}
+
+.portfolio::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.portfolio::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  border-radius: 20px;
+  border: 3px solid #f1f1f1;
+}
