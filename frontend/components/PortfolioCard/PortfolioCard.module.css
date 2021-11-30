@@ -46,3 +46,14 @@
   transition: 0.5s;
   padding: 20px;
 }
+@media only screen and (max-width: 900px) {
+  .card:before {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  .card .info {
+    opacity: 1;
+    transform: translateY(0px);
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 100%;
+  }
+}

@@ -41,7 +41,6 @@
 
 .pages {
   padding: 20px;
-  /* max-height: 526px; */
   height: 100%;
   overflow-y: scroll;
 }
@@ -65,7 +64,5 @@
   }
   .navbar {
     display: none;
-  }
-  .container {
   }
 }

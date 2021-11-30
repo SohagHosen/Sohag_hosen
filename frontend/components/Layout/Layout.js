@@ -5,6 +5,7 @@ import Profile from "../Profile/Profile";
 import styles from "./Layout.module.css";
 import Footer from "../Footer/Footer";
 import MobileNav from "../MobileNav/MobileNav";
+import ChangeRoute from "../ChangeRoute/ChangeRoute";
 const Layout = ({ children }) => {
   return (
     <>
@@ -32,6 +33,7 @@ const Layout = ({ children }) => {
             >
               <MobileNav />
               <Box className={styles.pages}>{children}</Box>
+              <ChangeRoute />
             </Grid>
             <Grid className={styles.navbar} item xs={1}>
               <Navbar />

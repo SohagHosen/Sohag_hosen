@@ -10,7 +10,15 @@ export default function Home() {
         <main className={styles.home}>
           <Box className={styles.container}>
             <Typography
-              sx={{ fontWeight: "bold" }}
+              sx={{
+                fontSize: {
+                  lg: 70,
+                  md: 50,
+                  sm: 40,
+                  xs: 30,
+                },
+                fontWeight: "bold",
+              }}
               variant="h2"
               component="h2"
               gutterBottom
