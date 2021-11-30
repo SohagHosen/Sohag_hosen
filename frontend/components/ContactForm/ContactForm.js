@@ -1,4 +1,11 @@
-import { Alert, Button, Snackbar, TextField, Typography } from "@mui/material";
+import {
+  Alert,
+  Button,
+  InputBase,
+  Snackbar,
+  TextField,
+  Typography,
+} from "@mui/material";
 import { Box } from "@mui/system";
 import React, { useRef, useState } from "react";
 import emailjs from "emailjs-com";
@@ -71,34 +78,28 @@ const ContactForm = () => {
         </Alert>
       </Snackbar>
       <form ref={form} onSubmit={sendEmail}>
-        <TextField
-          sx={{ m: 1 }}
+        <InputBase
+          sx={{ m: 1, color: "white", borderBottom: "1px solid white" }}
+          placeholder="Full Name"
           fullWidth
-          id="standard-basic"
-          label="Full Name"
-          variant="standard"
           type="text"
           name="user_name"
           required
         />
-        <TextField
-          sx={{ m: 1 }}
+        <InputBase
+          sx={{ m: 1, color: "white", borderBottom: "1px solid white" }}
           fullWidth
-          id="standard-basic"
-          label="Email"
-          variant="standard"
+          placeholder="Email"
           type="email"
           name="user_email"
           required
         />
-        <TextField
-          sx={{ m: 1 }}
+        <InputBase
+          sx={{ m: 1, color: "white", borderBottom: "1px solid white" }}
           fullWidth
-          id="standard-multiline-static"
-          label="How Can I Help You?"
+          placeholder="How Can I Help You?"
           multiline
           rows={2}
-          variant="standard"
           name="message"
           required
         />
@@ -106,7 +107,6 @@ const ContactForm = () => {
         <LoadingButton
           loading={loading}
           loadingPosition="start"
-          variant="outlined"
           type="submit"
           sx={{ m: 1 }}
           fullWidth

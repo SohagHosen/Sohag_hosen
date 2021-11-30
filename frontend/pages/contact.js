@@ -16,27 +16,32 @@ const Contact = () => {
 
   const info = [
     {
-      icon: <LocationOnIcon fontSize="large" color="primary" />,
+      icon: <LocationOnIcon fontSize="large" />,
       title: "Savar, Dhaka",
     },
     {
-      icon: <PhoneIcon fontSize="large" color="primary" />,
+      icon: <PhoneIcon fontSize="large" />,
       title: "+8801910718990",
     },
     {
-      icon: <EmailIcon fontSize="large" color="primary" />,
+      icon: <EmailIcon fontSize="large" />,
       title: "sohag.hosen@outlook.com",
     },
   ];
 
   return (
-    <section style={{ overflow: "hidden" }}>
+    <section style={{ overflow: "hidden" }} className="pera">
       <Fade bottom>
         <Box className={styles.contact}>
           <Typography
             variant="h4"
-            color="primary"
-            sx={{ fontWeight: "bold", textTransform: "uppercase", mb: 2 }}
+            className="title"
+            sx={{
+              fontWeight: "bold",
+              textTransform: "uppercase",
+              mb: 2,
+              color: "success",
+            }}
           >
             Contact me
           </Typography>

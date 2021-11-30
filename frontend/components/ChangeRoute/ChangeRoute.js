@@ -8,28 +8,37 @@ import { Box } from "@mui/system";
 import styles from "./ChangeRoute.module.css";
 const ChangeRoute = () => {
   const router = useRouter();
-  console.log(router);
+
+  const routes = ["/", "/about", "/portfolio", "/contact"];
+  const pathName = router.pathname;
+
+  const nextRoute = () => {
+    const currentIndex = routes.indexOf(pathName);
+    if (routes.indexOf(pathName) === routes.length - 1) {
+      router.push(routes[0]);
+      console.log(routes.length - 1);
+    } else {
+      router.push(routes[currentIndex + 1]);
+    }
+  };
+  const previousRoute = () => {
+    const currentIndex = routes.indexOf(pathName);
+    if (routes.indexOf(pathName) === 0) {
+      router.push(routes[routes.length - 1]);
+      console.log(routes.length - 1);
+    } else {
+      router.push(routes[currentIndex - 1]);
+    }
+  };
 
   return (
     <Box className={styles.changeRoute}>
       <ButtonGroup disableElevation variant="outlined">
-        <Button>
-          <IconButton
-            color="primary"
-            aria-label="upload picture"
-            component="span"
-          >
-            <ArrowBackIosIcon />
-          </IconButton>
+        <Button onClick={previousRoute}>
+          <ArrowBackIosIcon />
         </Button>
-        <Button>
-          <IconButton
-            color="primary"
-            aria-label="upload picture"
-            component="span"
-          >
-            <ArrowForwardIosIcon />
-          </IconButton>
+        <Button onClick={nextRoute}>
+          <ArrowForwardIosIcon />
         </Button>
       </ButtonGroup>
     </Box>

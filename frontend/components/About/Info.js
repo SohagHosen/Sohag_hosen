@@ -5,7 +5,7 @@ import React from "react";
 const Info = ({ infoName, value }) => {
   return (
     <Box sx={{ display: "flex", gap: 1 }}>
-      <Typography variant="h6" color="primary">
+      <Typography variant="h6" className="title">
         {infoName}
       </Typography>{" "}
       <Typography variant="h6">{value}</Typography>

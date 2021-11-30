@@ -19,7 +19,7 @@ const MobileNav = () => {
   const [openNav, setOpenNav] = useState(false);
 
   return (
-    <React.Fragment>
+    <section className={styles.mobileNev}>
       <Box className={styles.navBtn}>
         <Button onClick={() => setOpenNav(!openNav)}>
           <MenuIcon />
@@ -28,8 +28,14 @@ const MobileNav = () => {
 
       <Drawer
         open={openNav}
-        sx={{ position: "relative" }}
+        sx={{ position: "relative", background: "transparent" }}
         onClose={() => setOpenNav(!openNav)}
+        PaperProps={{
+          sx: {
+            backgroundColor: "rgba(255, 255, 255, 0.15)",
+            backdropFilter: "blur(10px)",
+          },
+        }}
       >
         <Box className={styles.navBtnClose}>
           <Button onClick={() => setOpenNav(!openNav)}>
@@ -37,7 +43,7 @@ const MobileNav = () => {
           </Button>
         </Box>
         <Box
-          sx={{ width: 300, height: "100vh", mt: 10 }}
+          sx={{ maxWidth: 320, height: "100vh", mt: 10 }}
           role="presentation"
           onClick={() => setOpenNav(!openNav)}
           onKeyDown={() => setOpenNav(!openNav)}
@@ -45,8 +51,8 @@ const MobileNav = () => {
           <Box>
             <Profile />
             <Link href="/">
-              <ListItem button>
-                <ListItemIcon>
+              <ListItem button sx={{ color: "white" }}>
+                <ListItemIcon sx={{ color: "white" }}>
                   <HomeIcon />
                 </ListItemIcon>
                 <ListItemText primary={"Home"} />
@@ -54,24 +60,24 @@ const MobileNav = () => {
             </Link>
 
             <Link href="/about">
-              <ListItem button>
-                <ListItemIcon>
+              <ListItem button sx={{ color: "white" }}>
+                <ListItemIcon sx={{ color: "white" }}>
                   <PersonIcon />
                 </ListItemIcon>
                 <ListItemText primary={"About"} />
               </ListItem>
             </Link>
             <Link href="/portfolio">
-              <ListItem button>
-                <ListItemIcon>
+              <ListItem button sx={{ color: "white" }}>
+                <ListItemIcon sx={{ color: "white" }}>
                   <WorkIcon />
                 </ListItemIcon>
                 <ListItemText primary={"Portfolio"} />
               </ListItem>
             </Link>
             <Link href="/contact">
-              <ListItem button>
-                <ListItemIcon>
+              <ListItem button sx={{ color: "white" }}>
+                <ListItemIcon sx={{ color: "white" }}>
                   <EmailIcon />
                 </ListItemIcon>
                 <ListItemText primary={"Contact"} />
@@ -81,7 +87,7 @@ const MobileNav = () => {
         </Box>
         <Footer />
       </Drawer>
-    </React.Fragment>
+    </section>
   );
 };
 

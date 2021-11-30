@@ -18,7 +18,10 @@ const Navbar = () => {
         <li className={styles.navItem}>
           <Link href="/" passHref>
             <a
-              style={{ color: router.pathname == "/" ? "#007fff" : "" }}
+              style={{
+                color: router.pathname == "/" ? "#fff" : "#BBBFCA",
+                background: "red",
+              }}
               className={styles.navLink}
             >
               <NavPopover icon={<HomeIcon fontSize="large" />} popover="home" />
@@ -28,7 +31,9 @@ const Navbar = () => {
         <li className={styles.navItem}>
           <Link href="/about" passHref>
             <a
-              style={{ color: router.pathname == "/about" ? "#007fff" : "" }}
+              style={{
+                color: router.pathname == "/about" ? "#fff" : "#BBBFCA",
+              }}
               className={styles.navLink}
             >
               <NavPopover
@@ -41,7 +46,7 @@ const Navbar = () => {
         {/* <li className={styles.navItem}>
           <Link href="/resume" passHref>
             <a
-              style={{ color: router.pathname == "/resume" ? "#007fff" : "" }}
+              style={{ color: router.pathname == "/resume" ? "#fff" : "#BBBFCA" }}
               className={styles.navLink}
             >
               <NavPopover
@@ -55,7 +60,7 @@ const Navbar = () => {
           <Link href="/portfolio" passHref>
             <a
               style={{
-                color: router.pathname == "/portfolio" ? "#007fff" : "",
+                color: router.pathname == "/portfolio" ? "#fff" : "#BBBFCA",
               }}
               className={styles.navLink}
             >
@@ -69,7 +74,9 @@ const Navbar = () => {
         <li className={styles.navItem}>
           <Link href="/contact" passHref>
             <a
-              style={{ color: router.pathname == "/contact" ? "#007fff" : "" }}
+              style={{
+                color: router.pathname == "/contact" ? "#fff" : "#BBBFCA",
+              }}
               className={styles.navLink}
             >
               <NavPopover

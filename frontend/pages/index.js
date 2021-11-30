@@ -10,6 +10,7 @@ export default function Home() {
         <main className={styles.home}>
           <Box className={styles.container}>
             <Typography
+              className="pera"
               sx={{
                 fontSize: {
                   lg: 70,
@@ -25,7 +26,12 @@ export default function Home() {
             >
               Sohag hosen
             </Typography>
-            <Typography variant="body1" gutterBottom component="h5">
+            <Typography
+              className="pera"
+              variant="body1"
+              gutterBottom
+              component="h5"
+            >
               MERN Stack Developer
             </Typography>
           </Box>

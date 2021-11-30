@@ -20,18 +20,12 @@ const AboutMe = () => {
       description:
         "The back- end of a website consists of a server, an application, and a database. A back-end developer builds and maintains the technology that powers those components which, together, enable the user-facing side of the website to even exist in the first place.",
     },
-    {
-      img: graphics,
-      title: "Graphics Design",
-      description:
-        "Graphic design is a craft where professionals create visual content to communicate messages. By applying visual hierarchy and page layout techniques, designers use typography and pictures to meet users' specific needs and focus on the logic of displaying elements in interactive designs, to optimize the user experience.",
-    },
   ];
   return (
     <Box className={styles.aboutMe}>
       <Typography
         variant="h4"
-        color="primary"
+        className="title"
         sx={{ fontWeight: "bold", textTransform: "uppercase" }}
       >
         About Me
@@ -56,7 +50,7 @@ const AboutMe = () => {
       <Box sx={{ mt: 2 }}>
         <Typography
           variant="h4"
-          color="primary"
+          className="title"
           sx={{ fontWeight: "bold", textTransform: "uppercase", mb: 2 }}
         >
           What I Do

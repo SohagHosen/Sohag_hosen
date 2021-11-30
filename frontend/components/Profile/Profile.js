@@ -21,11 +21,11 @@ const Profile = () => {
               alt="avatar"
             />
           </div>
-          <div className={styles.name}>
+          <div className={`${styles.name} pera`}>
             <span>Sohag_Hosen</span>
           </div>
         </header>
-        <span className={styles.title}>Web Developer</span>
+        <span className={`${styles.title} pera`}>Web Developer</span>
         <section>
           <ul className={styles.socialIcons}>
             <li className={styles.socialItem}>
@@ -63,8 +63,10 @@ const Profile = () => {
         </section>
         <a href="https://drive.google.com/uc?export=download&id=13PYLqhhhsq6-DGhhKOLfnqIKZxpaRIaO">
           <Button
-            sx={{ mt: 2 }}
-            variant="outlined"
+            sx={{
+              mt: 2,
+            }}
+            variant="contained"
             startIcon={<DownloadIcon />}
           >
             Download Resume

@@ -49,7 +49,7 @@ const Portfolio = () => {
         <Box className={styles.portfolio}>
           <Typography
             variant="h4"
-            color="primary"
+            className="title"
             sx={{ fontWeight: "bold", textTransform: "uppercase", mb: 2 }}
           >
             Portfolio

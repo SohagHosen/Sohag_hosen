@@ -33,7 +33,6 @@ const Layout = ({ children }) => {
             >
               <MobileNav />
               <Box className={styles.pages}>{children}</Box>
-              <ChangeRoute />
             </Grid>
             <Grid className={styles.navbar} item xs={1}>
               <Navbar />
@@ -41,6 +40,7 @@ const Layout = ({ children }) => {
           </Grid>
         </Box>
       </Box>
+      <ChangeRoute />
     </>
   );
 };

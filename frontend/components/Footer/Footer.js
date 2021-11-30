@@ -3,10 +3,10 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className={styles.footer}>
-      <small>
+      <small className="pera">
         &#169; {new Date().getFullYear()}{" "}
         <Link href="/">
-          <span style={{ color: "#1976d2", cursor: "pointer" }}>
+          <span className="title" style={{ cursor: "pointer" }}>
             {" "}
             Sohag hosen
           </span>

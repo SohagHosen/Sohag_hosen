@@ -51,7 +51,7 @@ const NavPopover = ({ icon, popover }) => {
             pb: 0.5,
             textTransform: "uppercase",
             fontWeight: "bold",
-            color: "#007fff",
+            color: "#5eba7d",
           }}
         >
           {popover}
