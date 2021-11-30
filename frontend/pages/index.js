@@ -5,7 +5,7 @@ import styles from "../styles/Home.module.css";
 import Fade from "react-reveal/Fade";
 export default function Home() {
   return (
-    <>
+    <section style={{ overflow: "hidden", height: "100%" }}>
       <Fade bottom>
         <main className={styles.home}>
           <Box className={styles.container}>
@@ -23,6 +23,6 @@ export default function Home() {
           </Box>
         </main>
       </Fade>
-    </>
+    </section>
   );
 }

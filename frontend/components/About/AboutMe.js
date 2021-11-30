@@ -37,14 +37,14 @@ const AboutMe = () => {
         About Me
       </Typography>
       <Grid container spacing={3}>
-        <Grid item md={6}>
+        <Grid item sm={6} md={6}>
           <Typography variant="subtitle1" sx={{ mt: 2, textAlign: "justify" }}>
             Hello, I am Sohag hosen, I'm learning web development in Programming
             hero. I have developed many awesome websites. You also see my
             projects in the portfolio section.
           </Typography>
         </Grid>
-        <Grid item md={6}>
+        <Grid item sm={6} md={6}>
           <Box sx={{ mt: 2 }}>
             <Info infoName="Residence" value="Bangladesh" />
             <Info infoName="Address" value="Savar, Dhaka" />

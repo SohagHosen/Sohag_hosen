@@ -2,13 +2,10 @@ import React, { useState } from "react";
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import Button from "@mui/material/Button";
-import List from "@mui/material/List";
 import MenuIcon from "@mui/icons-material/Menu";
 import ListItem from "@mui/material/ListItem";
 import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
-import InboxIcon from "@mui/icons-material/MoveToInbox";
-import MailIcon from "@mui/icons-material/Mail";
 import CloseIcon from "@mui/icons-material/Close";
 import styles from "./MobileNav.module.css";
 import Profile from "../Profile/Profile";
@@ -16,7 +13,6 @@ import Footer from "../Footer/Footer";
 import HomeIcon from "@mui/icons-material/Home";
 import Link from "next/link";
 import PersonIcon from "@mui/icons-material/Person";
-import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import EmailIcon from "@mui/icons-material/Email";
 const MobileNav = () => {
@@ -24,27 +20,30 @@ const MobileNav = () => {
 
   return (
     <React.Fragment>
-      <Button className={styles.navBtn} onClick={() => setOpenNav(!openNav)}>
-        <MenuIcon />
-      </Button>
-
-      <Drawer open={openNav} onClose={() => setOpenNav(!openNav)}>
-        <Button
-          className={styles.navBtnClose}
-          onClick={() => setOpenNav(!openNav)}
-        >
-          <CloseIcon />
+      <Box className={styles.navBtn}>
+        <Button onClick={() => setOpenNav(!openNav)}>
+          <MenuIcon />
         </Button>
-        <Box sx={{ mt: 3 }}>
-          <Profile />
+      </Box>
+
+      <Drawer
+        open={openNav}
+        sx={{ position: "relative" }}
+        onClose={() => setOpenNav(!openNav)}
+      >
+        <Box className={styles.navBtnClose}>
+          <Button onClick={() => setOpenNav(!openNav)}>
+            <CloseIcon />
+          </Button>
         </Box>
         <Box
-          sx={{ width: 300 }}
+          sx={{ width: 300, height: "100vh", mt: 10 }}
           role="presentation"
           onClick={() => setOpenNav(!openNav)}
           onKeyDown={() => setOpenNav(!openNav)}
         >
-          <Box sx={{ mt: 2 }}>
+          <Box>
+            <Profile />
             <Link href="/">
               <ListItem button>
                 <ListItemIcon>

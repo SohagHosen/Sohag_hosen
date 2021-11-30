@@ -44,30 +44,32 @@ const Portfolio = () => {
   ];
 
   return (
-    <Fade bottom>
-      <Box className={styles.portfolio}>
-        <Typography
-          variant="h4"
-          color="primary"
-          sx={{ fontWeight: "bold", textTransform: "uppercase", mb: 2 }}
-        >
-          Portfolio
-        </Typography>
-        <Box>
-          <Grid container spacing={{ xs: 2, md: 3 }}>
-            {portfolioData?.map((data, index) => (
-              <Grid item xs={12} sm={6} md={12} lg={4} key={index}>
-                <PortfolioCard
-                  img={data.img}
-                  name={data.name}
-                  previewLink={data.previewLink}
-                />
-              </Grid>
-            ))}
-          </Grid>
+    <section style={{ overflow: "hidden" }}>
+      <Fade bottom>
+        <Box className={styles.portfolio}>
+          <Typography
+            variant="h4"
+            color="primary"
+            sx={{ fontWeight: "bold", textTransform: "uppercase", mb: 2 }}
+          >
+            Portfolio
+          </Typography>
+          <Box>
+            <Grid container spacing={{ xs: 2, md: 3 }}>
+              {portfolioData?.map((data, index) => (
+                <Grid item xs={12} sm={6} md={12} lg={4} key={index}>
+                  <PortfolioCard
+                    img={data.img}
+                    name={data.name}
+                    previewLink={data.previewLink}
+                  />
+                </Grid>
+              ))}
+            </Grid>
+          </Box>
         </Box>
-      </Box>
-    </Fade>
+      </Fade>
+    </section>
   );
 };
 

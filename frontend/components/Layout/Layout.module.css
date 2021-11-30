@@ -1,42 +1,62 @@
 .main {
   height: 100vh;
-  min-height: 600px;
+  min-height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: #f7f7f7;
+  position: relative;
+  overflow: hidden;
 }
 .container {
-  height: 100%;
-  max-height: 500px;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-width: 100%;
   width: 95%;
   margin: auto;
 }
 .profileContainer {
   height: 100%;
   position: relative;
-  border-right: 1px solid rgb(233, 233, 233);
-  box-shadow: 0px -2px 20px 0px rgb(221 221 221);
-  background-color: #fff;
+  border-right: 1px solid #f3f3f3;
+  background-color: rgb(255, 255, 255);
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
 }
 .pages {
   width: 100%;
   height: 100%;
-  background-color: #fff;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  overflow: hidden;
+}
+.pageContainer {
+  position: relative;
+  height: 100%;
+}
+
+.pages {
+  padding: 20px;
+  /* max-height: 526px; */
+  height: 100%;
+  overflow-y: scroll;
+}
+.pages::-webkit-scrollbar {
+  width: 10px;
+}
+
+.pages::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+.pages::-webkit-scrollbar-thumb {
+  background-color: #1976d2;
+  border-radius: 20px;
+  border: 3px solid #f1f1f1;
 }
 
 @media only screen and (max-width: 900px) {
@@ -45,5 +65,7 @@
   }
   .navbar {
     display: none;
+  }
+  .container {
   }
 }

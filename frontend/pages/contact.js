@@ -9,7 +9,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import ContactInfo from "../components/ContactInfo/ContactInfo";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 const Contact = () => {
   const Map = dynamic(() => import("../components/Map/Map"), {
     ssr: false,
@@ -31,32 +30,34 @@ const Contact = () => {
   ];
 
   return (
-    <Fade bottom>
-      <Box className={styles.contact}>
-        <Typography
-          variant="h4"
-          color="primary"
-          sx={{ fontWeight: "bold", textTransform: "uppercase", mb: 2 }}
-        >
-          Contact me
-        </Typography>
-        <Grid container spacing={4}>
-          <Grid item md={6} xs={12} sm={12}>
-            <ContactForm />
-          </Grid>
-          <Grid item md={6} xs={12} sm={12}>
-            <Map />
-          </Grid>
-        </Grid>
-        <Grid sx={{ mt: 2 }} container spacing={2}>
-          {info?.map((inf, i) => (
-            <Grid key={i} item md={4} xs={12} sm={6}>
-              <ContactInfo icon={inf.icon} title={inf.title} />
+    <section style={{ overflow: "hidden" }}>
+      <Fade bottom>
+        <Box className={styles.contact}>
+          <Typography
+            variant="h4"
+            color="primary"
+            sx={{ fontWeight: "bold", textTransform: "uppercase", mb: 2 }}
+          >
+            Contact me
+          </Typography>
+          <Grid container spacing={4}>
+            <Grid item md={6} xs={12} sm={12}>
+              <ContactForm />
             </Grid>
-          ))}
-        </Grid>
-      </Box>
-    </Fade>
+            <Grid sx={{ height: 300 }} item md={6} xs={12} sm={12}>
+              <Map />
+            </Grid>
+          </Grid>
+          <Grid sx={{ mt: 2 }} container spacing={2}>
+            {info?.map((inf, i) => (
+              <Grid key={i} item lg={4} md={6} xs={12} sm={6}>
+                <ContactInfo icon={inf.icon} title={inf.title} />
+              </Grid>
+            ))}
+          </Grid>
+        </Box>
+      </Fade>
+    </section>
   );
 };
 

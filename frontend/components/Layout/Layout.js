@@ -12,12 +12,12 @@ const Layout = ({ children }) => {
         <Box className={styles.container}>
           <Grid container sx={{ height: "100%" }}>
             <Grid
-              sx={{ minWidth: "250px", background: "red" }}
               className={styles.profileContainer}
               item
               xs={12}
               sm={12}
-              md={3}
+              md={4.5}
+              lg={3.2}
             >
               <Profile />
               <Footer />
@@ -26,25 +26,18 @@ const Layout = ({ children }) => {
               className={styles.pageContainer}
               sx={{ flexGrow: 1 }}
               item
-              md={7.4}
-              lg={8}
               xs={12}
+              md={6.5}
+              lg={7.8}
             >
+              <MobileNav />
               <Box className={styles.pages}>{children}</Box>
             </Grid>
-            <Grid
-              className={styles.navbar}
-              // sx={{ background: "green", maxWidth: "50px" }}
-              item
-              xs={1}
-              sm={1}
-              md={1}
-            >
+            <Grid className={styles.navbar} item xs={1}>
               <Navbar />
             </Grid>
           </Grid>
         </Box>
-        <MobileNav />
       </Box>
     </>
   );
