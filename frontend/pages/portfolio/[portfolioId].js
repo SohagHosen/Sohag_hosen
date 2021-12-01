@@ -18,7 +18,6 @@ const portfolioDetails = () => {
       setSelectedPortfolio(d?.[0]);
     }
   }, [router.query.portfolioId]);
-  console.log(selectedPortfolio);
   return (
     <>
       {selectedPortfolio?.name && (
@@ -68,11 +67,13 @@ const portfolioDetails = () => {
                           <Button key="one">Client Side Repo</Button>
                         </a>
                       </Link>
-                      <Link href={selectedPortfolio?.links?.server}>
-                        <a target="_blank">
-                          <Button key="one">Server Side Repo</Button>
-                        </a>
-                      </Link>
+                      {selectedPortfolio?.links?.server && (
+                        <Link href={selectedPortfolio?.links?.server}>
+                          <a target="_blank">
+                            <Button key="one">Server Side Repo</Button>
+                          </a>
+                        </Link>
+                      )}
                       <Link href={selectedPortfolio?.previewLink}>
                         <a target="_blank">
                           <Button key="one">Preview</Button>

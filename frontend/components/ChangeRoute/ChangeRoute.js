@@ -16,7 +16,6 @@ const ChangeRoute = () => {
     const currentIndex = routes.indexOf(pathName);
     if (routes.indexOf(pathName) === routes.length - 1) {
       router.push(routes[0]);
-      console.log(routes.length - 1);
     } else {
       router.push(routes[currentIndex + 1]);
     }
@@ -25,7 +24,6 @@ const ChangeRoute = () => {
     const currentIndex = routes.indexOf(pathName);
     if (routes.indexOf(pathName) === 0) {
       router.push(routes[routes.length - 1]);
-      console.log(routes.length - 1);
     } else {
       router.push(routes[currentIndex - 1]);
     }

@@ -52,8 +52,7 @@ export const portfolioData = [
     name: "Eye Care",
     previewLink: "https://eye-care-ass.netlify.app/",
     links: {
-      client: "https://github.com/SohagHosen/bike-zone-client",
-      server: "https://github.com/SohagHosen/bike-zone-server",
+      client: "https://github.com/SohagHosen/Eye-Care",
       livePreview: "https://bike-zone-bd.web.app",
     },
     details: {
