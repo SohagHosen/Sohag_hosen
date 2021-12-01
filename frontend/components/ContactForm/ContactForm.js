@@ -112,7 +112,7 @@ const ContactForm = () => {
           fullWidth
           variant="contained"
         >
-          Save
+          Submit
         </LoadingButton>
       </form>
     </Box>

@@ -8,7 +8,7 @@ import SchoolIcon from "@mui/icons-material/School";
 import WorkIcon from "@mui/icons-material/Work";
 import EmailIcon from "@mui/icons-material/Email";
 import { useRouter } from "next/router";
-
+import BookIcon from "@mui/icons-material/Book";
 const Navbar = () => {
   const router = useRouter();
 
@@ -43,19 +43,7 @@ const Navbar = () => {
             </a>
           </Link>
         </li>
-        {/* <li className={styles.navItem}>
-          <Link href="/resume" passHref>
-            <a
-              style={{ color: router.pathname == "/resume" ? "#fff" : "#BBBFCA" }}
-              className={styles.navLink}
-            >
-              <NavPopover
-                icon={<SchoolIcon fontSize="large" />}
-                popover="resume"
-              />
-            </a>
-          </Link>
-        </li> */}
+
         <li className={styles.navItem}>
           <Link href="/portfolio" passHref>
             <a
@@ -82,6 +70,21 @@ const Navbar = () => {
               <NavPopover
                 icon={<EmailIcon fontSize="large" />}
                 popover="contact"
+              />
+            </a>
+          </Link>
+        </li>
+        <li className={styles.navItem}>
+          <Link href="/blogs" passHref>
+            <a
+              style={{
+                color: router.pathname == "/blogs" ? "#fff" : "#BBBFCA",
+              }}
+              className={styles.navLink}
+            >
+              <NavPopover
+                icon={<BookIcon fontSize="large" />}
+                popover="Blogs"
               />
             </a>
           </Link>

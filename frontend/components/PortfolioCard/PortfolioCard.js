@@ -4,7 +4,7 @@ import React from "react";
 import styles from "./PortfolioCard.module.css";
 import Image from "next/image";
 import Link from "next/link";
-const PortfolioCard = ({ img, name, previewLink }) => {
+const PortfolioCard = ({ img, name, previewLink, id }) => {
   return (
     <Box className={styles.card}>
       <Image className={styles.image} src={img} layout="fill" />
@@ -13,7 +13,10 @@ const PortfolioCard = ({ img, name, previewLink }) => {
           {name}
         </Typography>
         <Box sx={{ display: "flex", gap: 2 }}>
-          {/* <Button variant="contained">Details</Button> */}
+          <Link href={`portfolio/${id}`}>
+            <Button variant="contained">Details</Button>
+          </Link>
+
           <Link href={`${previewLink}`} passHref={true}>
             <a target="_blank">
               <Button variant="contained">Preview</Button>

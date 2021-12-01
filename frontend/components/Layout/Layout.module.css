@@ -58,11 +58,6 @@
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(10px);
 }
-@-moz-document url-prefix() {
-  .pageContainer {
-    background-color: #fff;
-  }
-}
 .pages {
   padding: 20px;
   height: 100%;
